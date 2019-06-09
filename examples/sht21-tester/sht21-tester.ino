@@ -1,11 +1,10 @@
 #include <Wire.h>
-#include "SparkFun_Si7021_Breakout_Library.h" //Kniznica pre SHT21 senzor
+#include "SparkFun_Si7021_Breakout_Library.h"
+Weather sensor; 
 
-Weather sensor; //instancia pre senzor
-
-void setup() { //cast setupu prebieha iba raz
-  Serial.begin(115200); //pocet znakov/s v serial monitore - UART
-  delay(10); //vyckaj na inicializaciu
+void setup() {
+  Serial.begin(115200);
+  delay(10);
   sensor.begin();
  delay(1000);
 }
@@ -13,12 +12,11 @@ void setup() { //cast setupu prebieha iba raz
 
 void loop() {
   delay(1000);
-  Serial.println("Vlhkost: ");
-  float vlhkost = sensor.getRH();
-  Serial.println(vlhkost);
-  float teplotadnu = sensor.getTemp();
-  Serial.println("Teplota: ");
-  Serial.println(teplotadnu);
+  Serial.println("Humidity: ");
+  float hum = sensor.getRH();
+  Serial.println(hum);
+  float temp = sensor.getTemp();
+  Serial.println("Temperature: ");
+  Serial.println(temp);
   delay(1000);
 }
-        
