@@ -4,7 +4,7 @@
 
 Mikrokontróler|SHT21
 :----------: | :----------:
-3.3V|Vcc
+2.1-3.6V|Vcc
 GND|GND
 (Hardware SDA)|SDA
 (Hardware SCL)|SCL
