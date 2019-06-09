@@ -1,4 +1,5 @@
-# BME-680-tester
+# SHT21-tester
+
 ## Zapojenie - I2C
 
 Mikrokontróler|BME280
