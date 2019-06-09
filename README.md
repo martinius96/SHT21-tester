@@ -1,6 +1,6 @@
 # SHT21-tester
 
-## Zapojenie - I2C
+## Wiring - I2C
 
 Mikrokontróler|SHT21
 :----------: | :----------:
